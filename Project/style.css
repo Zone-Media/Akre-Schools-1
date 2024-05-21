@@ -1,0 +1,127 @@
+html,
+body,
+#viewDiv {
+    background-color: #9895955b;
+    padding: 0;
+    margin: 0;
+    height: 95%;
+    width: 100%;
+}
+
+body {
+    height: 100px;
+    display: contents;
+
+
+}
+
+.searchbar {
+    display: contents;
+    position: absolute;
+    overflow: hidden;
+    background-color: #6bb0b096;
+    backdrop-filter: blur(2px);
+}
+
+.searchbar-icon {
+    display: contents;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    color: #6bb0b096;
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 9px;
+    border: none;
+    margin: 5px;
+    font-size: 18px;
+    background-color: #6bb0b096;
+    text-align: left;
+    text-indent: 8px;
+    outline: none;
+}
+
+.searchbar,
+input[type=text] {
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.search {
+    color: #000000;
+    padding: 10px 15px;
+    background-color: #6bb0b096;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 12px;
+
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    cursor: pointer;
+}
+
+.clear {
+    color: #000000;
+    padding: 10px 15px;
+    background-color: #6bb0b096;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 12px;
+
+    border: 0;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    cursor: pointer;
+}
+
+.marquee {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #9895955b;
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    width: 99.9%;
+    /* Full width of its parent */
+    white-space: nowrap;
+}
+
+.marquee p {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+    /* Start off the right edge */
+    transform: translateX(100%);
+    /* Animate to the left */
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
